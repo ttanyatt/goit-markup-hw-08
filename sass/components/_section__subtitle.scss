@@ -1,0 +1,4 @@
+.section__subtitle {
+    @include font (null, 14px, 1.14, null)
+    text-transform: uppercase;
+}

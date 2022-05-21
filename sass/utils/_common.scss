@@ -1,0 +1,18 @@
+body {
+    font-family: 'Roboto', 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: var(--primary-text-color);
+    background-color: var(--primary-bg-color);
+    font-size: 14px;
+    letter-spacing: 0.03em;
+}
+
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.images {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

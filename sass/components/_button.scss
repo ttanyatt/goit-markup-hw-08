@@ -1,0 +1,28 @@
+.btn {
+    margin: auto;
+    min-width: 200px;
+    height: 50px;
+    @extend %align-list;
+    justify-content: center;
+    border-radius: 4px;
+
+    font-family: inherit;
+    @include font(700, 16px, 1.88, 0.06em);
+    color: var(--btn-text-color);
+    background-color: var(--accent-text-color);
+    cursor: pointer;
+    border: none;
+}
+
+.btn--inverse {
+    transition: background-color 250ms var(--timing-function),
+        color 250ms var(--timing-function);
+
+        &:hover, 
+        &:focus, 
+        &:active {
+                color: var(--accent-text-color);
+                background-color: var(--btn-text-color);
+            }
+}
+
