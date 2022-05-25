@@ -508,16 +508,6 @@ section {
   color: var(--hero-title-text-color);
 }
 
-.features__list {
-  display: flex;
-  margin-left: -30px;
-}
-
-.features__item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
-}
-
 .features__item::before {
   display: block;
   content: '';
@@ -526,6 +516,10 @@ section {
   background-color: var(--secondary-bg-color);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.features__item:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .features__icon--antenna::before {
@@ -545,7 +539,8 @@ section {
 }
 
 .features__subtitle {
-  margin-bottom: 13px;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
 .features__text {

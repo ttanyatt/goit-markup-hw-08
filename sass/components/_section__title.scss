@@ -1,9 +1,9 @@
 .section__title {
     margin-bottom: 30px;
     text-align: center;
-    @include font (null, 28px, 1.18, null)
+    @include font (null, 28px, 1.18, null);
 
-    @media screen and (min-width: 1200px) {
+    @include media(1200px) {
         margin-bottom: 50px;
         @include font (null, 36px, 1.17, null);
     }
