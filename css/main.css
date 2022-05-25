@@ -53,7 +53,6 @@ section {
 
 @media screen and (min-width: 1200px) {
   section {
-    max-width: 1200px;
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -534,6 +533,12 @@ section {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .features__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
 .features__item:not(:last-child) {
   margin-bottom: 30px;
 }
@@ -603,6 +608,7 @@ section {
   .team-cards__list {
     display: flex;
     flex-wrap: wrap;
+    margin-left: -30px;
   }
 }
 

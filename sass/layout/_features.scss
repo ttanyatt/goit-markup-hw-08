@@ -26,6 +26,7 @@
 
         @include media(1200px) {
             flex-basis: calc(100% / 4 - 30px);
+        }
 }
 
 .features__item:not(:last-child) {
@@ -61,4 +62,3 @@
     line-height: 1.71;
     color: var(--secondary-text-color);
 }
-
