@@ -508,6 +508,10 @@ section {
   color: var(--hero-title-text-color);
 }
 
+.features__list {
+  margin-bottom: -30px;
+}
+
 @media screen and (min-width: 768px) {
   .features__list {
     display: flex;
@@ -530,6 +534,7 @@ section {
   .features__item {
     flex-basis: calc(100% / 2 - 30px);
     margin-left: 30px;
+    margin-bottom: 30px;
   }
 }
 
@@ -537,10 +542,6 @@ section {
   .features__item {
     flex-basis: calc(100% / 4 - 30px);
   }
-}
-
-.features__item:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 .features__icon--antenna::before {
@@ -604,6 +605,10 @@ section {
   background-color: var(--secondary-bg-color);
 }
 
+.team-cards__list {
+  margin-bottom: -30px;
+}
+
 @media screen and (min-width: 768px) {
   .team-cards__list {
     display: flex;
@@ -613,6 +618,7 @@ section {
 }
 
 .team-cards__item {
+  margin-bottom: 30px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--primary-bg-color);
@@ -630,10 +636,6 @@ section {
   .team-cards__item {
     flex-basis: calc(100% / 4 - 30px);
   }
-}
-
-.team-cards__item:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 .team-cards__info {
@@ -665,17 +667,32 @@ section {
 
 .clients__list {
   display: flex;
+  flex-wrap: wrap;
   margin-left: -30px;
+  margin-bottom: -30px;
 }
 
 .clients__item {
   display: flex;
-  flex-basis: calc(100% / 6 - 30px);
+  flex-basis: calc(100% / 2 - 30px);
   margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients__item {
+    flex-basis: calc(100% / 3 - 30px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients__item {
+    flex-basis: calc(100% / 6 - 30px);
+  }
 }
 
 .clients__link {
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--icons-color);
   border-radius: 4px;
@@ -686,6 +703,18 @@ section {
 .clients__link:hover, .clients__link:focus {
   color: var(--accent-text-color);
   border: 1px solid var(--accent-text-color);
+}
+
+@media screen and (min-width: 768px) {
+  .clients__link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients__link {
+    width: 170px;
+  }
 }
 
 .clients__icon {
