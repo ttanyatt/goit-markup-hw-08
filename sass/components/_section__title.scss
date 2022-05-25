@@ -1,7 +1,7 @@
 .section__title {
     margin-bottom: 30px;
     text-align: center;
-    @include font (null, 28px, 1.18, null);
+    @include font(null, 28px, 1.18, null);
 
     @include media(1200px) {
         margin-bottom: 50px;
