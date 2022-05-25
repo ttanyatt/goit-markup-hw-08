@@ -47,8 +47,15 @@ body {
 }
 
 section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .images {
@@ -81,6 +88,24 @@ section {
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
 }
 
 .btn {
@@ -127,10 +152,18 @@ section {
 }
 
 .section__title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   text-align: center;
-  font-size: 36px;
-  line-height: 1.17;
+  font-size: 28px;
+  line-height: 1.18;
+}
+
+@media screen and (min-width: 1200px) {
+  .section__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.17;
+  }
 }
 
 .section__subtitle {
@@ -141,7 +174,6 @@ section {
 
 .social__list {
   display: flex;
-  margin-bottom: 30px;
   justify-content: center;
 }
 
@@ -550,21 +582,49 @@ section {
   background-color: var(--secondary-bg-color);
 }
 
-.team-cards__list {
-  display: flex;
-  margin-left: -30px;
+@media screen and (min-width: 768px) {
+  .team-cards__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .team-cards__item {
-  flex-basis: calc(100% / 4 - 30px);
-  margin-left: 30px;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: var(--primary-bg-color);
 }
 
+@media screen and (min-width: 768px) {
+  .team-cards__item {
+    flex-basis: calc(100% / 2 - 30px);
+    margin-left: 30px;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team-cards__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
+.team-cards__item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.team-cards__info {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-cards__info {
+    padding-bottom: 30px;
+  }
+}
+
 .team-cards__title {
-  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 500;
   font-size: 16px;
@@ -574,8 +634,6 @@ section {
 
 .team-cards__text {
   margin-bottom: 16px;
-  font-size: 16px;
-  line-height: 1.19;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
