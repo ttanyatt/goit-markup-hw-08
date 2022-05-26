@@ -125,15 +125,6 @@ section {
   border: none;
 }
 
-.btn--inverse {
-  transition: background-color 250ms var(--timing-function), color 250ms var(--timing-function);
-}
-
-.btn--inverse:hover, .btn--inverse:focus, .btn--inverse:active {
-  color: var(--accent-text-color);
-  background-color: var(--btn-text-color);
-}
-
 .logo {
   font-family: 'Raleway';
   font-weight: 700;
@@ -486,26 +477,61 @@ section {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
-  background-color: var(--accent-bg-color);
-  max-width: 1600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob.jpg);
   background-repeat: no-repeat;
+  background-color: var(--accent-bg-color);
+  background-size: cover;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+  }
 }
 
 .hero__title {
-  max-width: 696px;
+  max-width: 360px;
   margin: auto;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
+  text-align: center;
   text-transform: uppercase;
   color: var(--hero-title-text-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    max-width: 696px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .features__list {
@@ -581,7 +607,14 @@ section {
 }
 
 .gallery {
-  padding-top: 0;
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .gallery {
+    display: flex;
+    padding-top: 0;
+  }
 }
 
 .gallery__list {

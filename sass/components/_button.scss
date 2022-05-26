@@ -14,15 +14,4 @@
     border: none;
 }
 
-.btn--inverse {
-    transition: background-color 250ms var(--timing-function),
-        color 250ms var(--timing-function);
-
-        &:hover, 
-        &:focus, 
-        &:active {
-                color: var(--accent-text-color);
-                background-color: var(--btn-text-color);
-            }
-}
 
