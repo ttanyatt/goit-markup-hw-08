@@ -17,7 +17,8 @@
 }
 
 .navigation__list {
-    display: flex;
+    display: none;
+    // display: flex;
 }
 
 .navigation__link {
@@ -77,9 +78,10 @@
 
 
 .contacts__list {
-    display: flex;
-    margin-left: auto;
-    align-items: center;
+    display: none;
+    // display: flex;
+    // margin-left: auto;
+    // align-items: center;
 }
 
 .contacts__item:not(:last-child) {
@@ -107,3 +109,18 @@
 .contacts__icons {
     fill: currentColor;
 }
+
+.navigation-menu__btn {
+    border: none;
+    padding: 0;
+    margin-left: auto;
+    background-color: var(--primary-bg-color);
+    cursor: pointer;
+    transition: fill 250ms var(--timing-function);
+    
+        &:hover,
+        &:focus {
+            fill: var(--accent-text-color);
+        }
+}
+
