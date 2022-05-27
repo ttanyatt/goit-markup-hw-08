@@ -104,8 +104,10 @@
 
 
 .subscribe__wrap {
-    @include media(1200px)
-    display: flex;
+    @include media(1200px) {
+        display: flex;
+    }
+    
 }
 
 .subscribe__input {

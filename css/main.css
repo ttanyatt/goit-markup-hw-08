@@ -1038,8 +1038,10 @@ section {
   }
 }
 
-.subscribe__wrap {
-  display: flex;
+@media screen and (min-width: 1200px) {
+  .subscribe__wrap {
+    display: flex;
+  }
 }
 
 .subscribe__input {
