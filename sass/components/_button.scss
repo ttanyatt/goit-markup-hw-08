@@ -5,7 +5,6 @@
     @extend %align-list;
     justify-content: center;
     border-radius: 4px;
-
     font-family: inherit;
     @include font(700, 16px, 1.88, 0.06em);
     color: var(--btn-text-color);

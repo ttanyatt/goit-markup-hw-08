@@ -9,7 +9,6 @@
     
 }
 
-
 .features__item {
     margin-bottom: 30px;
     &::before {
@@ -32,16 +31,6 @@
             flex-basis: calc(100% / 4 - 30px);
         }
 }
-
-// .features__item:not(:last-child) {
-//     margin-bottom: 30px;
-// }
-
-// .features__item:nth-last-child(-n + 2) {
-//     @include media(768px) {
-//         margin-bottom: 0;
-//     }
-// }
 
 .features__icon--antenna::before {
     background-image: url(../images/features/antenna.svg);
