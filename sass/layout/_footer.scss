@@ -2,12 +2,34 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: var(--accent-bg-color);
+    max-width: 1600px;
+    margin: 0 auto;
     
-    .container {
+        .container {
             display: flex;
-            align-items: baseline;
+            flex-direction: column;
+            align-items: center;
+            
+            @include media(768px) {
+                flex-direction: row;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                justify-content: space-around;
+            }
+
+            @include media(1200px) {
+                display: flex;
+                align-items: baseline;
+            }
         }
 }
+
+// .footer__info {
+//     @include media(1200px) {
+//         display: flex;
+//             align-items: flex-start;
+//         }
+// }
 
 .address {
     font-style: normal;
@@ -16,11 +38,24 @@
 }
 
 .address__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 20px;
+    margin-bottom: 60px;
+
+    @include media(1200px) {
+            align-items: flex-start;
+            margin-bottom: 0;
+        }
 }
 
 .address__item:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+
+    @include media(1200px) {
+        margin-bottom: 9px;
+    }
 }
 
 .address__link {
@@ -37,8 +72,17 @@
 }
 
 .footer__social {
-    display: block;
-    margin-left: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+
+    @include media(1200px) {
+        margin-left: 70px;
+        align-items: flex-start;
+    }
+
+    
 }
 
 .footer__subtitle {
@@ -49,17 +93,26 @@
 .subscribe {
     display: flex;
     flex-direction: column;
-    margin-left: auto;
+    align-items: center;
+
+    @include media(1200px) {
+            margin-left: auto;
+            align-items: flex-start;
+        }
+    
 }
 
+
 .subscribe__wrap {
+    @include media(1200px)
     display: flex;
 }
 
 .subscribe__input {
-    width: 358px;
+    width: 450px;
     height: 50px;
-    margin-right: 12px;
+    
+    margin-bottom: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 15px;
@@ -68,6 +121,12 @@
     border-radius: 4px;
     color: var(--footer-address-color);
     background-color: var(--accent-bg-color);
+
+    @include media(1200px) {
+        width: 358px;
+        margin-right: 12px;
+        margin-bottom: 0;
+    }
 }
 
 .subscribe__icon {

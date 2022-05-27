@@ -10,6 +10,7 @@
     @include font(700, 16px, 1.88, 0.06em);
     color: var(--btn-text-color);
     background-color: var(--accent-text-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     cursor: pointer;
     border: none;
 }

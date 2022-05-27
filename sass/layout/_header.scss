@@ -1,7 +1,10 @@
 .header {
     border-bottom: 1px solid #ECECEC;
-    .container {
+    max-width: 1600px;
+    margin: 0 auto;
+        .container {
         display: flex;
+        width: 100%;
     }
 }
 
@@ -111,7 +114,7 @@
 
 .contacts__link {
     @extend %align-list;
-    @include font(500, null, 1.14, 00.02em)
+    @include font(500, null, 1.14, 0.02em);
     color: var(--secondary-text-color);
 
     transition: color 250ms var(--timing-function);
