@@ -56,7 +56,7 @@
 .navigation__link--current {
     color: var(--accent-text-color);
     
-        .navigation__link &::after {
+                &::after {
             content: '';
             position: absolute;
             display: block;

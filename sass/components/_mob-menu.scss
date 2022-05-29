@@ -78,7 +78,7 @@
 }
 
 .mob-contacts__link--tel {
-    @include font(500, 40px, null, null);
+    @include font(500, 34px, null, null);
     color: var(--accent-text-color);
 }
 
